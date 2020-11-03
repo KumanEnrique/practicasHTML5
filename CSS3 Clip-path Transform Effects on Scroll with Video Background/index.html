@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS3 Clip-path Transform Effects on Scroll with Video Background</title>
+</head>
+<body>
+    <secion class="banner">
+        <video src="video.mp4" autoplay muted loop></video>
+    </secion>
+    <div class="container">
+        <h2>Scroll to se the magic again</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet consectetur dicta architecto quasi quo cum tempora eum aliquid, provident ducimus soluta deserunt! Temporibus eligendi tenetur corrupti ex reprehenderit atque assumenda cupiditate mollitia voluptate nihil, corporis eos earum aliquid eveniet voluptas non nam molestiae dicta molestias quae explicabo maiores, commodi nostrum? Necessitatibus unde nostrum eaque dolorum quo, ipsa doloremque! In dolorem laudantium commodi! Eum, nesciunt quas optio maiores quam, dicta alias iure, id porro nobis ullam quaerat quis minus. Nostrum, inventore modi enim at ut necessitatibus consequuntur quas, dolores non accusantium iste laborum. Provident iusto impedit deserunt sunt quod dignissimos tempora. <br><br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet consectetur dicta architecto quasi quo cum tempora eum aliquid, provident ducimus soluta deserunt! Temporibus eligendi tenetur corrupti ex reprehenderit atque assumenda cupiditate mollitia voluptate nihil, corporis eos earum aliquid eveniet voluptas non nam molestiae dicta molestias quae explicabo maiores, commodi nostrum? Necessitatibus unde nostrum eaque dolorum quo, ipsa doloremque! In dolorem laudantium commodi! Eum, nesciunt quas optio maiores quam, dicta alias iure, id porro nobis ullam quaerat quis minus. Nostrum, inventore modi enim at ut necessitatibus consequuntur quas, dolores non accusantium iste laborum. Provident iusto impedit deserunt sunt quod dignissimos tempora. <br><br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet consectetur dicta architecto quasi quo cum tempora eum aliquid, provident ducimus soluta deserunt! Temporibus eligendi tenetur corrupti ex reprehenderit atque assumenda cupiditate mollitia voluptate nihil, corporis eos earum aliquid eveniet voluptas non nam molestiae dicta molestias quae explicabo maiores, commodi nostrum? Necessitatibus unde nostrum eaque dolorum quo, ipsa doloremque! In dolorem laudantium commodi! Eum, nesciunt quas optio maiores quam, dicta alias iure, id porro nobis ullam quaerat quis minus. Nostrum, inventore modi enim at ut necessitatibus consequuntur quas, dolores non accusantium iste laborum. Provident iusto impedit deserunt sunt quod dignissimos tempora. <br><br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet consectetur dicta architecto quasi quo cum tempora eum aliquid, provident ducimus soluta deserunt! Temporibus eligendi tenetur corrupti ex reprehenderit atque assumenda cupiditate mollitia voluptate nihil, corporis eos earum aliquid eveniet voluptas non nam molestiae dicta molestias quae explicabo maiores, commodi nostrum? Necessitatibus unde nostrum eaque dolorum quo, ipsa doloremque! In dolorem laudantium commodi! Eum, nesciunt quas optio maiores quam, dicta alias iure, id porro nobis ullam quaerat quis minus. Nostrum, inventore modi enim at ut necessitatibus consequuntur quas, dolores non accusantium iste laborum. Provident iusto impedit deserunt sunt quod dignissimos tempora. <br><br>
+    </p>
+    </div>
+    <script>
+        const banner = document.querySelector(".banner")
+        window.addEventListener("scroll",function(){
+            const value = 800 - window.scrollY
+            banner.style.clipPath = "circle(" + value + "px at center center)"
+        })
+    </script>
+</body>
+</html>

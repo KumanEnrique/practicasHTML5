@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mosaic Pattern</title>
+</head>
+<body>
+    <div class="container"></div>
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        for (let i = 0;i<2500;i++){
+            $('.container').append('<div class="box"></div>')
+        }
+        $('.container .box').each(function(){
+            $(this).css('background',"#" + (Math.random() * 16777215 | 0).toString(16))
+        })
+    </script>
+</body>
+</html>
