@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>change cursor</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+        <div class="cursor"></div>
+    </ul>
+    <script>
+        const cursor = document.querySelector(".cursor")
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX + "px"
+            cursor.style.top = e.pageY + "px"
+        })
+    </script>
+</body>
+</html>
