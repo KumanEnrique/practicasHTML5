@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    padding: 10px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+section.sec1{
+    background: url(pexels-isaac-taylor-2119758.jpg);
+    background-size: cover;
+    /* margin: 50px 0; */
+}
+section.sec2{
+    padding: 100px;
+    box-sizing: border-box;
+    height: auto;
+}
+header p{
+    color: #fff;
+    font-size: 2em;
+    background: transparent;
+    font-weight: 700;
+}
+section.sec2 h2{
+    color: #fff;
+    font-size: 3em;
+    padding: 0px 0px 20px;
+}
+section.sec2 p{
+    color: #fff;
+    font-size: 1em;
+}
+section.sec3{
+    background: url(1.jpg);
+    background-size: cover;
+}
+nav{
+    background: none;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 100px;
+    height: 100%;
+    background: none;
+}
+nav ul li{
+    list-style: none;
+    background: none;
+}
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    margin: 0px 10px;
+    background: none;
+    font-weight: 700;
+}
