@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Background</title>
+</head>
+<body>
+    <section>
+        <h2>random</h2>
+        <script>
+            function changeBg(){
+                const images = [
+                    'url("1.jpg")',
+                    'url("2.jpg")',
+                    'url("3.jpg")',
+                    'url("4.jpg")',
+                    'url("8.jpg")',
+                    'url("6.jpg")',
+                    'url("7.jpg")',
+                    'url("8.jpg")',
+                    'url("9.jpg")',
+                    'url("10.jpg")',
+                ]
+                const section = document.querySelector('section')
+                const bg = images[Math.floor(Math.random() * images.length)]
+                section.style.background = bg
+                section.style.backgroundSize = "cover"
+            }
+            setInterval(changeBg,3000)
+        </script>
+    </section>
+</body>
+</html>
