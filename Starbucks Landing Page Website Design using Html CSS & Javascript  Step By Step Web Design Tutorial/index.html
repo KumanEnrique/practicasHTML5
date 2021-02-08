@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Starbucks Website Landing Page(Responsive</title>
 </head>
 <body>
     <section>
         <div class="circle"></div>
         <header>
             <a href="#" ><img src="logo.png" class="logo"></a>
-            <ul>
+            <div class="toggle" onclick="toggle()"></div>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">What's New</a></li>
@@ -47,6 +48,12 @@
         function changeCircleColor(color){
             const circle = document.querySelector('.circle')
             circle.style.background = color
+        }
+        function toggle(){
+            const menuToggle = document.querySelector(".toggle")
+            const navigation = document.querySelector(".navigation")
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
         }
     </script>
 </body>
