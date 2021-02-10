@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Background size Change on Scroll</title>
+</head>
+<body>
+    <div id="header"></div>
+    <section>
+        <h2>bagckgroun size change into small acrolling</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nulla ullam atque recusandae non iusto tempore maiores molestias similique expedita quidem hic rem nam beatae fugiat vero commodi tempora assumenda!
+        Odio dolorum culpa voluptate delectus eius a laudantium qui error possimus maxime magni labore harum eum quam ex ipsam aliquam nesciunt tenetur sunt ab, iste aperiam? Pariatur, nesciunt ducimus! Veniam?
+        Odio molestiae pariatur, autem impedit distinctio doloremque! Asperiores reprehenderit ipsum dolore est facilis voluptates! Quas enim sapiente animi voluptas quis illo. Illo itaque repellendus, veritatis reiciendis quisquam laborum tempora temporibus.
+        Animi, ad recusandae sunt, doloremque asperiores eveniet culpa laboriosam doloribus alias soluta reprehenderit incidunt in vitae a. Eaque, a vitae est sequi neque voluptatem possimus adipisci nulla, rerum dolores pariatur!
+        Sapiente, architecto aut hic tempora ex voluptatem consequatur dicta tenetur? Dicta quod delectus voluptatem quisquam ipsum consequatur maxime nesciunt fugit culpa! Numquam ex sit natus ipsum. Fuga amet veritatis architecto.
+        Aut, magni natus. Excepturi possimus dolorem quos necessitatibus fuga neque, nostrum omnis perspiciatis nisi similique nam magnam, harum minus quaerat! Earum recusandae et quis quaerat fugiat doloremque sequi, distinctio nesciunt!
+        Dolores sequi assumenda, voluptates non aperiam ex fugit. Natus dolor iste rem quidem id deserunt ad! Repudiandae esse libero sapiente, illo ipsa iusto cum, similique minus, enim saepe assumenda molestiae.
+        Suscipit pariatur quia laboriosam vero non fugit veniam, explicabo quam hic ratione sint aspernatur architecto beatae, ea doloribus quasi et aperiam exercitationem reprehenderit est! Impedit repellendus praesentium ducimus minus fuga!
+        Ipsum, nobis unde? Enim est facilis, ad atque quis iure esse et ex dolore suscipit saepe, quisquam rerum explicabo, earum qui! Nostrum perspiciatis, delectus iusto unde doloremque sint deleniti animi.
+        Voluptatem officiis unde doloremque quaerat omnis perferendis cupiditate, placeat at quibusdam iusto iure incidunt qui! Doloremque possimus ipsum quis, illo magnam alias repellendus dignissimos. Porro quaerat nemo nesciunt soluta culpa.</p>
+    </section>
+    <script>
+        const bg = document.getElementById('header')
+        window.addEventListener("scroll",function(){
+            bg.style.backgroundSize = 160 + window.pageYOffset/12 + "%"
+            bg.style.opacity = 1 - window.pageYOffset/700 + " "
+        })
+    </script>
+</body>
+</html>
