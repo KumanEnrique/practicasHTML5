@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Long Box Shadow</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="circle"></div>
+    <script>
+        let box = document.querySelector('.box')
+        let shadow ='';
+        let circle = document.querySelector('.circle')
+        let shadow2 ='';
+        for(i = 0;i<500;i++){
+            shadow += (shadow? ',': '') + i * 1 +'px ' + i * 1 + 'px 0 #e8305b'
+        }
+        box.style.boxShadow = shadow
+
+        for(i = 0;i<500;i++){
+            shadow2 += (shadow2? ',': '') + i * 1 +'px ' + i * 1 + 'px 0 #e8305b'
+        }
+        circle.style.boxShadow = shadow2
+    </script>
+</body>
+</html>
