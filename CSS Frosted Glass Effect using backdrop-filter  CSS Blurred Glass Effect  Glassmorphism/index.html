@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frosted Glass Effects</title>
+</head>
+<body>
+    <section>
+        <h2>Frosted Glass</h2>
+        <div class="glass"></div>
+    </section>
+    <script>
+        document.addEventListener("mousemove",function(e){
+            const glass = document.querySelector(".glass")
+            glass.style.left = e.offsetX + "px"
+            glass.style.top = e.offsetY + "px"
+        })
+    </script>
+</body>
+</html>
